@@ -1,31 +1,25 @@
 import React from "react";
-
+import Levels from "./Levels";
+import FoodCard from "./FoodCard";
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import StarsIcon from '@mui/icons-material/Stars';
 export const Services = (props) => {
   return (
+    <>
+  
+  
     <div id="services" className="text-center">
+     
       <div className="container">
         <div className="section-title">
-          <h2>Our Services</h2>
+          <h2>Join Early Access to Pioxno Rewards Program</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          At Pioxno, we believe in the timeless art of culinary craftsmanship, where every dish tells a story of tradition, flavor, and passion. With three distinct brand outlets under our banner, we invite you to embark on a journey of taste that celebrates the essence of Indian cuisine.
           </p>
         </div>
-        <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <div className="service-desc">
-                    <h3>{d.name}</h3>
-                    <p>{d.text}</p>
-                  </div>
-                </div>
-              ))
-            : "loading"}
-        </div>
+        <Levels/>
       </div>
     </div>
+    </>
   );
 };

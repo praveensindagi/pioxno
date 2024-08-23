@@ -1,15 +1,15 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Innovate. Create. Dominate. ",
+    "paragraph": "Inspired by Innovation."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": " Discover a culinary adventure like no other at Pioxno, home to three distinctive brand outlets in Bengaluru. From the delectable delights of Savoria to the aromatic brews of BrewMist and the irresistible treats of CraveHaven, we are dedicated to serving you the best in freshly prepared food and beverages. ",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Fresh & Quality: Enjoy freshly prepared food and beverages made with top-notch ingredients.",
+      "Variety: Explore diverse culinary experiences with our three unique brand outlets.",
+      "Warm Service: Experience genuine hospitality from our friendly staff.",
+      "Expansion Vision: We aim to spread our exceptional taste across India in the next five years.      "
     ],
     "Why2": [
       "Aliquip ex ea commodo",
@@ -67,77 +67,62 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-cutlery",
+      "name": "Taste of Pioxno",
+      "text": "Immerse yourself in the rich flavors of North India with our authentic dishes, including fragrant curries and hearty thalis, all prepared with time-honored recipes and premium ingredients."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-coffee",
+      "name": "Pioxno Barista",
+      "text": "Elevate your coffee experience with expertly crafted brews and indulge in a classic English breakfast spread, meticulously prepared to satisfy your cravings for both caffeine and comfort."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-cutlery",
+      "name": "Pohawala By Pioxno",
+      "text": "Experience the warmth of Indian hospitality with our comforting poha dishes and aromatic chai, perfect for a quick bite or a leisurely snack break."
     }
   ],
   "Testimonials": [
     {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "img": "img/testimonials/she.jpg",
+      "text": "\" This kitchen serves the best Chai on Zomato! Also Special poha is literally the best, you can trust me and thank me later! 🙈 I’ve tried many restaurants but thiss oneee has my heart!! Very hygienic! And very well packed and sent! Instructions were completely followed! If you’re someone who loves ghar ka khaana very much or misses Maa ke haat jaisa khana then this place is the best! Please add coffee in your menu please please please! Also some more varieties of cookies tooo please! Thank you so much in advance 🤤🤙🏻🤙🏻🤙🏻\"",
+      "name": "Dee"
     },
     {
-      "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "img": "img/testimonials/she.jpg",
+      "text": "\"worth every single penny spent...they actually serve you freshly home vibe poha...      \"",
+      "name": "Nitu Prakash"
     },
     {
-      "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "img": "img/testimonials/she.jpg",
+      "text": "\" Ordering from here for the second time..and they have maintained the same consistency, quality and hygiene.. I'm very glad and thankful that I found this place. amazing dish, very nicely cooked and very tasty to eat. I would recommend this to anyone, without any hesitation. thanks guys, and keep up the good work.. 🙏🙏👏👏\"",
+      "name": "SJ"
     },
     {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "img": "img/testimonials/she.jpg",
+      "text": "\" It’s really yum must try them \"",
+      "name": "Pari"
     },
     {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "img": "img/testimonials/she.jpg",
+      "text": "\" very tasteful and hygiene. Reminded of home food      \"",
+      "name": "jeevitha"
     },
     {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "img": "img/testimonials/she.jpg",
+      "text": "\" 👌🏼Extremely hygienic and freshly prepared food! Thank you so much for full filling my cravings Pioxno🤤      \"",
+      "name": "Disha"
     }
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "img": "img/team/kajumasala.png",
+      "name": "Kaju Masala ",
+      "job": "Top Rated dish"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
+      "img": "img/team/Mom's Poha.jpeg",
+      "name": "Mom's Poha",
       "job": "Senior Designer"
     },
     {
@@ -161,24 +146,24 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-cutlery",
+      "title": "Taste of Pioxno",
+      "text": "L."
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa  fa-coffee",
+      "title": "Pohawala by Pioxno",
+      "text": "p"
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-cutlery",
+      "title": "Pohawala by Pioxno",
+      "text": "p"
     },
     {
       "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Vadapavv by Pioxno ",
+      "text": "j"
     }
   ]
 }

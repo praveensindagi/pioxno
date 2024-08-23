@@ -1,8 +1,18 @@
 import React from "react";
-
+import { Button } from "@mui/material";
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import StarsIcon from '@mui/icons-material/Stars';
+import { Link } from "react-router-dom";
 export const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+    <>
+    
+    <nav  className="navbar-fixed-top">
+    <marquee scrollamount="12" bgcolor="green" direction="right" height="30px" > 
+        <p> <StarsIcon  fontSize="small"/> 20% OFF  UPTO < CurrencyRupeeIcon fontSize="medium" /> 50 . USECODE - HUNGRY50  <StarsIcon/>  
+        </p>
+         </marquee>
+    <nav id="menu"  className="navbar navbar-default ">
       <div className="container">
         <div className="navbar-header">
           <button
@@ -17,8 +27,8 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
+          <a className="navbar-brand page-scroll" href="/">
+            Pioxno
           </a>{" "}
         </div>
 
@@ -27,44 +37,45 @@ export const Navigation = (props) => {
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
+           
+          <li>
+              <a href="/" className="page-scroll">
+              Home
+              </a>
+            </li>
+           
             <li>
-              <a href="#features" className="page-scroll">
-                Features
+
+              <a href="/Brands" className="page-scroll">
+               Our Brands
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
-                About
+              <a href="/Merchandise" className="page-scroll">
+               Merchandise
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
-                Services
+              <a href="/About" className="page-scroll">
+              About Pioxno
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
-                Gallery
+              <a href="/Career" className="page-scroll">
+               Career
               </a>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href="#team" className="page-scroll">
-                Team
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="page-scroll">
-                Contact
+              <a  id="textD" href="Contact" className="page-scroll">
+               <span  href="/JoinRewards"  id="JoinButton">  Join Reward Program</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    </nav>
+   
+    </>
   );
 };
