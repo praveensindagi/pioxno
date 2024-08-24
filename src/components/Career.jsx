@@ -1,9 +1,9 @@
 import React , { useState, useMemo  }  from 'react';
-import { Container, Grid, Typography, Button, Card, CardContent, CardActions, Box } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 import JobCard from './JobCard';
-import JobFilter from './JobFilter';
-import CultureSection from './CultureSection';
-import HiringStepsBanner from'./HiringStepsBanner';
+import JobFilter from './JobFilter.jsx';
+import CultureSection from './CultureSection.jsx';
+import HiringStepsBanner from'./HiringStepsBanner.jsx';
 
 const initialJobs = [
     { title: 'Software Engineer', role: 'Development', location: 'San Francisco, CA', experience: '2-4 years', level: 'Mid', jobType: 'Full-time' },

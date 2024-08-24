@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Grid, Typography, Box } from '@mui/material';
-import PeopleIcon from '@mui/icons-material/People';
 import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import WorkIcon from '@mui/icons-material/Work';

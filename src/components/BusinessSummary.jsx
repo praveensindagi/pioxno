@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Grid, Paper } from '@mui/material';
+import { Container, Typography,  Paper } from '@mui/material';
 import { styled } from '@mui/system';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';

@@ -1,11 +1,7 @@
 import React from 'react';
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import { Button, FormControl ,Input } from '@mui/material';
+import { Button } from '@mui/material';
 import Container from '@mui/material/Container';
-import { Padding } from '@mui/icons-material';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
 const Footer =() => {

@@ -1,8 +1,6 @@
 import React from "react";
 import Levels from "./Levels";
-import FoodCard from "./FoodCard";
-import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
-import StarsIcon from '@mui/icons-material/Stars';
+
 export const Services = (props) => {
   return (
     <>

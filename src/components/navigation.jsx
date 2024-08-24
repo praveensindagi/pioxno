@@ -1,8 +1,6 @@
 import React from "react";
-import { Button } from "@mui/material";
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import StarsIcon from '@mui/icons-material/Stars';
-import { Link } from "react-router-dom";
 export const Navigation = (props) => {
   return (
     <>

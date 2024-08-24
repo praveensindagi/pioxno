@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import FoodItemCard from './FoodItemCard';
 import { Container, Box } from '@mui/material';
 

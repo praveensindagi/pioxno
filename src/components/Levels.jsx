@@ -2,13 +2,7 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
 import { Button } from '@mui/material';
-import FormLabel from '@mui/material/FormLabel';
-import FormControl from '@mui/material/FormControl';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import RadioGroup from '@mui/material/RadioGroup';
-import Radio from '@mui/material/Radio';
-import Paper from '@mui/material/Paper';
-import LockIcon from '@mui/icons-material/Lock';
+
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 export default function Levels() {

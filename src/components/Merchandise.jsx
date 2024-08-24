@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, Typography, Grid, Card, CardMedia, CardContent, CardActions, Button, Box } from '@mui/material';
+import { Container, Typography, Grid,  Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import LoyaltyIcon from '@mui/icons-material/Loyalty';
+
 import MerchandiseItemsBanner from './MerchandiseItemsBanne';
 
 const FullScreenBanner = styled(Box)({
@@ -59,19 +58,7 @@ const Headline = styled(Typography)({
    
 });
 
-const ProductCard = styled(Card)({
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-});
 
-const ProductMedia = styled(CardMedia)({
-    paddingTop: '56.25%', // 16:9
-});
-
-const ProductContent = styled(CardContent)({
-    flexGrow: 1,
-});
 
 const marketingPickUpLines = [
     "Exclusive Merchandise for Pioxno Customers!",

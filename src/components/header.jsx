@@ -1,10 +1,9 @@
 import React from "react";
-import { Features } from "./features";
-import { Team } from "./Team";
-import { Services } from "./services";
-import RewardsStepsBanner from "./RewardsStepsBanner";
-import ComingSoonPage from "./ComingSoonPage";
-import MerchandiseBanner from "./MerchandiseBanner";
+import { Features } from "./features.jsx";
+import { Services } from "./services.jsx";
+import RewardsStepsBanner from "./RewardsStepsBanner.jsx";
+import ComingSoonPage from "./ComingSoonPage.jsx";
+import MerchandiseBanner from "./MerchandiseBanner.jsx";
 
 
 

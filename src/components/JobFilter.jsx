@@ -3,7 +3,6 @@
 import React, { useState, useCallback } from 'react';
 import { TextField, MenuItem, Button, Grid } from '@mui/material';
 import debounce from 'lodash.debounce';
-import { Padding } from '@mui/icons-material';
 
 const JobFilter = ({ onFilter, jobTypes, levels }) => {
   const [title, setTitle] = useState('');

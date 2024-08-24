@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, Typography, Grid, Card, CardMedia, CardContent, CardActions, Button, Box } from '@mui/material';
+import { Container, Typography, Grid, Card, CardMedia, CardContent, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import LoyaltyIcon from '@mui/icons-material/Loyalty';
+
 
 const FullScreenBanner = styled(Box)({
     display: 'flex',
