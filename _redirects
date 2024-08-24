@@ -1,1 +1,20 @@
-/About /About
+# Redirect Home to /
+/header    /    301
+
+# Redirect Our Brands to /our-brands
+/Brands   /brands    301
+
+# Redirect Merchandise to /merchandise
+/Merchandise    /merchandise    301
+
+# Redirect About Pioxno to /about
+/About   /about    301
+
+# Redirect Career to /career
+/Career    /career    301
+
+# Redirect Join Reward Program to /join-reward-program
+/Contact    /contact   301
+
+# Handle all other paths to redirect to the homepage (useful for SPA)
+/*    /index.html    200
