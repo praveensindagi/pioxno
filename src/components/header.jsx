@@ -1,38 +1,39 @@
 import React from "react";
-import { Features } from "./features.jsx";
+import { Features } from "./BrandsBanner.jsx";
 import { Services } from "./services.jsx";
 import RewardsStepsBanner from "./RewardsStepsBanner.jsx";
 import ComingSoonPage from "./ComingSoonPage.jsx";
 import MerchandiseBanner from "./MerchandiseBanner.jsx";
+import {Box ,Button,Typography} from '@mui/material';
 
 
 
 export const Header = (props) => {
   return (
     <>
-   
-    <header id="header">
-      <div className="intro">
-        <div className="overlay">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1>
-                Innovate. Create. Dominate.
-             
-                </h1>
-             
-                <a
-                  href="#features"
-                  className="btn btn-custom btn-lg page-scroll"
-                >
-Join Reward Program                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <Box
+      sx={{
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundImage: `url('../img/Home.svg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        textAlign: 'center',
+        padding:'15px',
+      }}
+    >
+      <Typography variant="h2" sx={{ color: 'white', fontWeight: 'bold' }}>
+      Innovate. Create. Dominate.
+      
+      </Typography>
+      
+      
+      
+    </Box>
+    
     <Features />
       <Services  />
       <RewardsStepsBanner/>

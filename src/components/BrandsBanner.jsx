@@ -4,8 +4,8 @@ import {Grid, Container, Typography} from '@mui/material';
 
 export const Features = (props) => {
   return (
-    <div id="features" className="text-center">
-      <div className="container">
+  
+   <> 
         <Grid container  justifyContent="center"
   alignItems="center" rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
   <Grid item xs={6} md={3}>
@@ -29,7 +29,7 @@ export const Features = (props) => {
 </Grid>
 
 
-      </div>
-    </div>
+</>
+ 
   );
 };

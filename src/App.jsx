@@ -3,7 +3,7 @@ import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import About  from "./components/About.jsx";
 
-import { Contact } from "./components/contact";
+import { JoinNow } from "./components/JoinNow.jsx";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -36,7 +36,7 @@ const App = () => {
         <Route path="/Merchandise" element={<Merchandise />}/>
         <Route path="/Career" element={<Career/>}/>
         <Route path="/Brands" element={<Brands/>}/>
-        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/JoinNow" element={<JoinNow/>}/>
         <Route path="/JobApplicationPage" element={<JobApplicationPage/>}/>
 
         

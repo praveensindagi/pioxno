@@ -14,7 +14,7 @@ const initialState = {
   termsAccepted: false,
 };
 
-export const Contact = (props) => {
+export const JoinNow= (props) => {
   const [open, setOpen] = useState(false);
  
   const theme = useTheme();
