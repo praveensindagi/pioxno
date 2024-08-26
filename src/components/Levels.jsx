@@ -22,7 +22,7 @@ export default function Levels() {
 <h4><i class="fa fa-check-circle-o" aria-hidden="true"></i> Birthday Reward: Free dessert on the member’s birthday.</h4>
 <h4><i class="fa fa-check-circle-o" aria-hidden="true"></i> Exclusive Offers: Access to special promotions and member-only discounts.</h4>
 <h4><i class="fa fa-check-circle-o" aria-hidden="true"></i> Early Access: Priority ordering for limited-time offers or new menu items.</h4>
-<h4><Button href='/Contact' Id='Button' variant="contained" size="large" >Join Now</Button> </h4>
+<h4><Button href='/JoinNow' Id='Button' variant="contained" size="large" >Join Now</Button> </h4>
 
       </Item>
       </Grid>
