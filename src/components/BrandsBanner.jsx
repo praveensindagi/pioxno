@@ -6,7 +6,7 @@ export const Features = (props) => {
   return (
   
    <> 
-        <Grid container  justifyContent="center"
+        <Grid container id="brandBanner"  justifyContent="center"
   alignItems="center" rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
   <Grid item xs={6} md={3}>
     <Container id="brands" className="Tasteofpioxno" sx={{textAlign:'center'}}>  

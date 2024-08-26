@@ -6,12 +6,8 @@ import CultureSection from './CultureSection.jsx';
 import HiringStepsBanner from'./HiringStepsBanner.jsx';
 
 const initialJobs = [
-    { title: 'Software Engineer', role: 'Development', location: 'San Francisco, CA', experience: '2-4 years', level: 'Mid', jobType: 'Full-time' },
-    { title: 'Product Manager', role: 'Management', location: 'New York, NY', experience: '5-7 years', level: 'Senior', jobType: 'Part-time' },
-    { title: 'UX Designer', role: 'Design', location: 'Austin, TX', experience: '3-5 years', level: 'Mid', jobType: 'Contract' },
-    { title: 'Product Manager', role: 'Management', location: 'New York, NY', experience: '5-7 years', level: 'Senior', jobType: 'Part-time' },
-    { title: 'UX Designer', role: 'Design', location: 'Austin, TX', experience: '3-5 years', level: 'Mid', jobType: 'Contract' },
-    // Add more job objects here
+    { title: 'Software Developer Intern', role: 'Development', location: 'Bengaluru(Remote)', experience: '0 years', level: 'fresher', jobType: 'Internship' },
+  
   ];
   
 const Career = () => {

@@ -4,6 +4,19 @@
    min-height: 550px;
    border-radius: 8px;
 }
+#brandBanner{
+    background-color: #013414;
+    padding: 20px;
+}
+#footerb{
+    font-family: "Poppins",sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    color: #333;
+    padding-right:"20px";
+    margin-right:'40px';
+}
+
 #Button{
     background: linear-gradient(to right,  #2d6a4f 0%, #1b4332 100%);
     color: wheat;
@@ -173,7 +186,7 @@ color: #013414;
 }
 .footercontent{
     padding: 15px;
-    background-color: #ededed;
+    background-color: #fcfcfc;
 
 }
 .footerPioxnollp{
@@ -261,9 +274,4 @@ font-size: 18px;
     border:1.5px solid green;
     border-radius: 20px;
 
-}
-.col-md-5{
-
-    background-color: #ededed;
-    padding: 30px;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Typography, Button, TextField, Box, Grid, Paper } from '@mui/material';
-import WorkIcon from '@mui/icons-material/Work';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CategoryIcon from '@mui/icons-material/Category';
 import ExperienceIcon from '@mui/icons-material/AccessTime';
@@ -83,7 +82,7 @@ const JobApplicationPage = () => {
             </Typography>
 
             {/* Key Responsibilities Section */}
-            <Typography variant="h5" sx={{ marginTop: 4 }}>Key Responsibilities</Typography>
+            <Typography variant="h5" sx={{ marginTop: 2}}>Key Responsibilities</Typography>
             <ul>
                 {jobDetails.responsibilities.map((resp, index) => (
                     <li key={index}>
@@ -93,17 +92,17 @@ const JobApplicationPage = () => {
             </ul>
 
             {/* Qualifications Section */}
-            <Typography variant="h5" sx={{ marginTop: 4 }}>Qualifications</Typography>
+            <Typography variant="h5" sx={{ marginTop: 2 }}>Qualifications</Typography>
             <ul>
                 {jobDetails.qualifications.map((qual, index) => (
-                    <li key={index}>
+                    <li  key={index}>
                         <Typography variant="body1" sx={{ marginTop: 1,fontSize:'12px' }}>{qual}</Typography>
                     </li>
                 ))}
             </ul>
 
             {/* Perks and Benefits Section */}
-            <Typography variant="h5" sx={{ marginTop: 4 }}>Perks and Benefits</Typography>
+            <Typography variant="h5" sx={{ marginTop: 2 }}>Perks and Benefits</Typography>
             <ul>
                 {jobDetails.perks.map((perk, index) => (
                     <li key={index}>

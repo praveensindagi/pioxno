@@ -71,11 +71,23 @@ export const JoinNow= (props) => {
 
   return (
     <>
-      <div id="contact">
-        <div className="container">
-          <div className="col-md-6">
-            <div className="row">
+   
+   <Container sx={{marginTop:'100px', padding:'20px'}}>
+
+
+     <Grid container>
+
+
+    
+       <Grid item xs={12} md={6} > 
+      <Container>
+
+     
+        
               <div className="section-title">
+         
+
+               
                 <h2>Join Pioxno Reward Program</h2>
                 <p>Please fill out the form below to join.</p>
               </div>
@@ -177,9 +189,10 @@ export const JoinNow= (props) => {
                   </Grid>
                 </Grid>
               </form>
-            </div>
-          </div>
-          <div className="col-md-5 col-md-offset-1 contact-info">
+              </Container>
+              </Grid>
+
+              <Grid item xs={12} md={6} sx={{marginBottom:'30px',marginTop:'60px'}}> 
           <Container maxWidth="md" sx={{ height: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12}>
@@ -270,9 +283,12 @@ export const JoinNow= (props) => {
         </Box>
       </Dialog>
     </Container>
-           </div>
-        </div>
-      </div>
+    
+    </Grid>
+    </Grid>
+    </Container>
+      
+   
       </>
   );
 };
