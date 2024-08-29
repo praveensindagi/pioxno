@@ -18,7 +18,7 @@ const PageContainer = styled(Box)({
 });
 
 const Title = styled(Typography)({
-  fontSize: '3rem',
+  fontSize: '4rem',
   fontWeight: 'bold',
   color: '#E5E5E5', // Deep purple for the title
   textAlign: 'center',
@@ -26,15 +26,15 @@ const Title = styled(Typography)({
 });
 
 const Description = styled(Typography)({
-  fontSize: '1.5rem',
+  fontSize: '2rem',
   color: '#cecccc', // Olive green for the description
   textAlign: 'center',
   marginBottom: '40px',
 });
 
 const MarketingLine = styled(Typography)({
-  fontSize: '1.2rem',
-  color: '#52B788',
+  fontSize: '1.6rem',
+  color: '#fcfcfc',
   textAlign: 'center',
   marginBottom: '20px',
 });
@@ -94,17 +94,21 @@ const ComingSoonPage = () => {
       <Container maxWidth="sm"> 
       <AppGrid container spacing={4}>
         {/* Android Phone */}
-        <Grid item xs={6} md={6}>
+     {
+      /* 
+       <Grid item xs={6} md={6}>
           <PhoneContainer>
             <PhoneGraphic src={Android} alt="Android Simulator" />
           </PhoneContainer>
         </Grid>
+      */
+     } 
 
         {/* Pioxno Text */}
        
 
         {/* iOS Phone */}
-        <Grid item xs={6} md={6}>
+        <Grid item xs={6} md={12}>
           <PhoneContainer>
             <PhoneGraphic src={IOS} alt="iOS Simulator" />
           </PhoneContainer>
@@ -112,7 +116,7 @@ const ComingSoonPage = () => {
         </Grid>
       </AppGrid>
       </Container>
-      <Typography sx={{marginTop:'40px',fontSize:'24px',fontStyle:'bold',fontFamily:'sans-serif'}}> Available soon on</Typography>
+     {/*  <Typography sx={{marginTop:'40px',fontSize:'24px',fontStyle:'bold',}}> Available soon on</Typography> */}
       <StoreLogos>
         <StoreLogo src="https://www.svgrepo.com/show/303139/google-play-badge-logo.svg" alt="Google Play Store" />
         <StoreLogo src="https://www.svgrepo.com/show/303128/download-on-the-app-store-apple-logo.svg" alt="App Store" />

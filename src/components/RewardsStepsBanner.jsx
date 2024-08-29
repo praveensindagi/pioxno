@@ -9,8 +9,9 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 // Styled components
 const RewardsBanner = styled(Box)({
-  backgroundColor: '#ce4257',
-  color: '#f5e9e2',
+  backgroundColor: '#dee2e6',
+  color: '#000000',
+  fontWeight:'500',
   padding: '60px 20px',
   textAlign: 'center',
   position: 'relative',
@@ -58,10 +59,10 @@ const StarsBackground = styled(Box)({
   left: 0,
   right: 0,
   bottom: 0,
-  backgroundImage: 'radial-gradient(#081C15 2px, transparent 2px)',
+  backgroundImage: 'radial-gradient(#ced4da 2px, transparent 2px)',
   backgroundSize: '20px 20px',
-  zIndex: 0,
-  opacity:'10%',
+  zIndex: -1,
+
 });
 
 const RewardsStepsBanner = () => {

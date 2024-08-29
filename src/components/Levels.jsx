@@ -28,7 +28,7 @@ export default function Levels() {
       </Grid>
       <Grid item  sm={4} xs={12} md={4}>
       <Item className='Diamond  '>
-      <span id='head' className='thead'><StarBorderIcon/> Green <StarBorderIcon/> </span>
+      <span id='head' className='thead'><StarBorderIcon/> Pro <StarBorderIcon/> </span>
       
        
 <h4><i class="fa fa-check-circle-o" aria-hidden="true"></i>All Welcome Tier Benefits
@@ -45,7 +45,7 @@ export default function Levels() {
       </Grid>
       <Grid  item  sm={4} xs={12} md={4}>
       <Item className='VIP'>
-      <h1 id='head' className='Gold'><StarBorderIcon/> Gold <StarBorderIcon/> </h1>
+      <h1 id='head' className='Gold'><StarBorderIcon/> Platinum <StarBorderIcon/> </h1>
       
 <h4  className='Gold'><i class="fa fa-check-circle-o" aria-hidden="true"></i>  All Green Tier Benefits</h4>
       

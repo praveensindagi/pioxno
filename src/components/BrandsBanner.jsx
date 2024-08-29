@@ -24,7 +24,7 @@ export const Features = (props) => {
   </Grid>
   <Grid item xs={6}  md={3}>
 <Container id="brands" className="Greenfoods" sx={{textAlign:'center'}}>
-<Typography variant="h6"  style={{fontSize:'30px',fontFamily:"Brush Script MT", fontWeight:'500'}}>GreenFoods by Pioxno</Typography> </Container>
+<Typography variant="h6"  style={{fontSize:'30px',fontFamily:"Brush Script MT", fontWeight:'500'}}>GreenFoods</Typography> </Container>
   </Grid>
 </Grid>
 

@@ -5,10 +5,10 @@ const MerchandiseBanner = () => {
   return (
     <Box
       sx={{
-        height: '500px',
+        height: '100vh',
         backgroundColor: '#000',
         backgroundImage: `radial-gradient(black, rgba(255, 255, 255, 0) 50%), 
-                          radial-gradient(purple, rgba(255, 255, 255, 0) 50%)`,
+                          radial-gradient(purple, rgba(255, 255, 255, 0) 70%)`,
         backgroundSize: '50px 50px',
         backgroundPosition: '10 10,10px 10px',
         display: 'flex',
@@ -20,10 +20,10 @@ const MerchandiseBanner = () => {
       
       }}
     >
-      <Typography variant="h3" component="h12" sx={{ fontWeight: 'bold', mb: 2 }}>
+      <Typography  sx={{fontSize:'48px', fontWeight:'600', fontWeight: 'bold', mb: 2 ,padding:'10px'}}>
         Exclusive Collection Now Available!
       </Typography>
-      <Typography variant="h5" component="p" sx={{ mb: 4 }}>
+      <Typography  sx={{fontSize:'24px', fontWeight:'600',mb: 4 ,padding:'20px',}} >
         Discover our latest merchandise, curated just for you.
       </Typography>
       <Button
@@ -31,9 +31,14 @@ const MerchandiseBanner = () => {
         color="primary"
         size="large"
         sx={{
-          backgroundColor: '#f50057',
+          height:"50px",
+          width:'300px',
+          fontSize:'16px',
+          backgroundColor: "transparent",
+          border:"1px solid white",
           ':hover': {
-            backgroundColor: '#c51162',
+            backgroundColor: '#000000',
+            color:'white'
           },
         }}
         href="/merchandise" // Update this link to your merchandise page

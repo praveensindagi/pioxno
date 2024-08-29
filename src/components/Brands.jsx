@@ -7,19 +7,18 @@ import Barista from './PioxnoBarista.png';
 import Pohawala from './Pohawala.png';
 // Styled components
 const Banner = styled(Box)({
-    background:  'linear-gradient(to right,  #2d6a4f 0%, #1b4332 100%)',
-    color: 'ffffff',
-    padding: '120px 20px',
+   
+    color: '#333',
+    padding: '120px 5px',
     textAlign: 'center',
     position: 'relative',
-    marginBottom: '30px',
-    marginTop:'40px',
+    marginTop:'30px',
 });
 
 const RestaurantCard = styled(Card)({
     width: '100%',
-    maxWidth: 320,
-    borderRadius: '15px',
+    
+    borderRadius: '5px',
     overflow: 'hidden',
     boxShadow: 'none', // No shadow
     transition: 'transform 0.3s ease',
@@ -46,12 +45,10 @@ const Brands = () => {
         <>
             {/* Banner Section */}
             <Banner>
-                <Typography variant="h2" component="h1" gutterBottom>
+                <Typography  variant="h1" component="h2" sx={{color:'#333'}}  gutterBottom>
                     Discover Our Brands
                 </Typography>
-                <Typography variant="h5" component="h2" sx={{color:'white'}} gutterBottom>
-                    Explore the Unique Specialties of Each Restaurant
-                </Typography>
+              
             </Banner>
 
             <Container>

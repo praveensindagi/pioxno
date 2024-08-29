@@ -8,23 +8,23 @@ import StarIcon from '@mui/icons-material/Star';
 
 const cultureData = [
     {
-      icon: <LocalDiningIcon fontSize="large"  style={{color:'#2d6a4f'}}/>,
+      icon: <LocalDiningIcon fontSize="large"  style={{color:'#000000'}}/>,
       title: 'Foodtech Innovation',
       description: 'Pioxno is a fast-growing foodtech startup with multibrand outlets.'
     },
 
     {
-      icon: <WorkIcon fontSize="large"  style={{color:'#2d6a4f'}}/>,
+      icon: <WorkIcon fontSize="large"  style={{color:'#000000'}}/>,
       title: 'Passionate Work Culture',
       description: 'Pioxno is passionate about work culture, supporting and implementing high standards.'
     },
     {
-      icon: <StarIcon fontSize="large" style={{color:'#2d6a4f'}} />,
+      icon: <StarIcon fontSize="large" style={{color:'#000000'}} />,
       title: 'High Standards',
       description: 'We implement high standards of working culture and quality time with employees.'
     },
     {
-      icon: <EmojiEventsIcon fontSize="large"  style={{color:'#2d6a4f'}}/>,
+      icon: <EmojiEventsIcon fontSize="large"  style={{color:'#000000'}}/>,
       title: 'Rewarding Excellence',
       description: 'We recognize and reward excellence and dedication in our team.'
     }

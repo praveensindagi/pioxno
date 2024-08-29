@@ -3,6 +3,7 @@ import { Container, Typography, Grid,  Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
 
 import MerchandiseItemsBanner from './MerchandiseItemsBanne';
+import ProductListingPage from './ProductListingPage';
 
 const FullScreenBanner = styled(Box)({
     display: 'flex',
@@ -10,7 +11,7 @@ const FullScreenBanner = styled(Box)({
     alignItems: 'center',
     justifyContent: 'center',
     height: '100vh',
-    backgroundColor: '#013414', // Green background
+    backgroundColor: '#000000', // Green background
     color: '#FAF3E0', // Beige font color
     textAlign: 'center',
     position: 'relative',
@@ -45,10 +46,10 @@ const Section = styled('div')({
 });
 
 const Banner = styled('div')({
-    background:' linear-gradient(to right,  #2d6a4f 0%, #1b4332 100%)',
-    padding: '120px 40px',
+    background:' linear-gradient(to right,  #000000 0%, #000000 100%)',
+    padding: '60px 40px',
     textAlign: 'center',
-    marginTop:'40px',
+    marginTop:'80px',
    
 });
 
@@ -80,47 +81,15 @@ const MerchandiseHome = () => {
                 
                 
             </Banner>
-            <MerchandiseItemsBanner/>
+          
 
-            <div className="comingsoon">
-                <Typography  component="h1"  sx={{textAlign:'center',fontSize:'20px'}}>Products are Listing Soon </Typography>
-            </div>
-           <Container sx={{ paddingY: 4 }}>
-            {/* Products Section */}
-            <Section>
-               <Grid container>
-
+    
               
-                    <Grid item xs={12} sm={6} md={6}>
-                        <Box sx={{ textAlign: 'left', padding: '20px' }}>
-                            <Typography variant="h4" component="h2" gutterBottom>
-                                Exclusive Pioxno Merchandise
-                            </Typography>
-                       
-                            <Typography variant="body1" paragraph>
-                                At Pioxno, we offer a range of exclusive merchandise designed for our valued customers. Our products, including the Ultra Premium T-Shirts and durable Bottles, are crafted with the highest quality materials to ensure comfort and satisfaction.
-                            </Typography>
-                            <Typography variant="body1" paragraph>
-                                Our T-Shirts are made from premium fabric that feels great against your skin and lasts wash after wash. The Pioxno Bottle is your perfect companion for staying hydrated on the go, whether you're at the gym, office, or out for a walk.
-                            </Typography>
-                            <Typography variant="body1" paragraph>
-                                Don't forget, your rewards can be redeemed towards all categories of our merchandise. Enjoy the best Pioxno has to offer, and show your support with our exclusive range.
-                            </Typography>
-                        </Box>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={6}>
-                        <Box sx={{ textAlign: 'left', padding: '20px' }}>
-                        <Typography variant="h4" component="h2" gutterBottom>
-                    Why Choose Pioxno Invite-Only Merchandise?
-                </Typography>
-                <Typography variant="body1" paragraph>
-                    Pioxno is proud to offer an exclusive range of merchandise, available only to our invite-only members. This unique collection features premium products, including our ultra-premium T-Shirts and stylish bottles, crafted with the highest quality materials. Our invite-only members enjoy special perks, personalized service, and the satisfaction of owning limited-edition items that are not available to the general public.
-                </Typography>
-                        </Box>
-                    </Grid>
-                    </Grid> 
-            </Section>
-        </Container>
+
+               <ProductListingPage/>
+             
+          
+        
         <FullScreenBanner>
             <BackgroundDots />
             <BannerContent>

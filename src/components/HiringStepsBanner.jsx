@@ -10,7 +10,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 // Styled components
 const HiringBanner = styled(Box)({
-background:'linear-gradient(to right,  #74c69d 0%, #52b788 100%)',
+background:'linear-gradient(to right,  #000000 0%, #000000 100%)',
   color: '#FAF3E0',
   padding: '60px 20px',
   textAlign: 'center',
@@ -72,7 +72,7 @@ const DotsBackground = styled(Box)({
   backgroundImage: 'radial-gradient(#FAF3E0 2px, transparent 2px)',
   backgroundSize: '20px 20px',
   zIndex: 0,
-  opacity:'10%',
+  opacity:'15%',
 });
 
 const HiringStepsBanner = () => {

@@ -15,6 +15,7 @@ import Merchandise from './components/Merchandise.jsx';
 import  Career from './components/Career.jsx'
 import Footer from "./components/Footer.jsx";
 import JobApplicationPage from "./components/JobApplicationPage.jsx";
+import BlogPage from "./components/BlogPage.jsx";
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
@@ -38,7 +39,7 @@ const App = () => {
         <Route path="/Brands" element={<Brands/>}/>
         <Route path="/JoinNow" element={<JoinNow/>}/>
         <Route path="/JobApplicationPage" element={<JobApplicationPage/>}/>
-
+        <Route path="/BlogPage" element={<BlogPage/>}/>
         
        </Routes>
       </BrowserRouter>

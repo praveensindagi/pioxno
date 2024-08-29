@@ -5,36 +5,16 @@ import RewardsStepsBanner from "./RewardsStepsBanner.jsx";
 import ComingSoonPage from "./ComingSoonPage.jsx";
 import MerchandiseBanner from "./MerchandiseBanner.jsx";
 import {Box ,Button,Typography} from '@mui/material';
+import Intro from "./Intro.jsx";
 
 
 
 export const Header = (props) => {
   return (
     <>
-    <Box
-      sx={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundImage: `url('../img/Home.svg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        textAlign: 'center',
-        padding:'15px',
-      }}
-    >
-      <Typography variant="h2" sx={{ color: 'white', fontWeight: 'bold' }}>
-      Innovate. Create. Dominate.
-      
-      </Typography>
-      
-      
-      
-    </Box>
+ 
     
-    <Features />
+   <Intro/>
       <Services  />
       <RewardsStepsBanner/>
       <MerchandiseBanner/>

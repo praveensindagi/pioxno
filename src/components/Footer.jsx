@@ -20,7 +20,7 @@ const Footer =() => {
                 </Grid>
                 <Grid item  xs={6} md={2}>
                     <h5> Company</h5>
-                    <h6> Blogs</h6>
+                    <h6> <a href="/BlogPage"> Blogs </a></h6>
                     <h6> Career</h6>
                  
                 </Grid>
@@ -44,10 +44,10 @@ const Footer =() => {
             </Grid>
             </Container>
          </div>
-        
-         <div className="footerPioxnollp">
-         <Container  className='footerContainer'>
-            <Grid container rowSpacing={2}>
+       
+         <div className="footerPioxnollp" >
+         <Container  className='footerContainer' >
+            <Grid container rowSpacing={2} >
                 <Grid item  xs={12} md={6} br>
                     <h6>2024 Pioxno. All rights Reserved</h6>
                    
