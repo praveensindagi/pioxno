@@ -16,6 +16,9 @@ import  Career from './components/Career.jsx'
 import Footer from "./components/Footer.jsx";
 import JobApplicationPage from "./components/JobApplicationPage.jsx";
 import BlogPage from "./components/BlogPage.jsx";
+import NotFound from "./components/NotFound.jsx";
+import AnimatedPioxno from "./components/AnimatedPioxno.jsx";
+
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
@@ -27,12 +30,37 @@ const App = () => {
     setLandingPageData(JsonData);
   }, []);
 
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+      // Check if the preloader has already been shown
+      const hasVisited = localStorage.getItem('hasVisited');
+
+      if (!hasVisited) {
+          // Show the preloader
+          setLoading(true);
+
+          // Simulate loading time and then hide the preloader
+          const timer = setTimeout(() => {
+              setLoading(false);
+              localStorage.setItem('hasVisited', 'true'); // Set the flag in localStorage
+          }, 1200); // Duration matches the animation
+
+          return () => clearTimeout(timer);
+      }
+  }, []);
+ 
   return (
-    <div>
+    <>
+       {loading ? (
+                <AnimatedPioxno />
+            ) : (
+              <div> 
       <Navigation />
       <BrowserRouter>
        <Routes>
-        <Route path="/" element={<Header data={landingPageData.Header} /> }/>
+        <Route path="/" element={<Header  /> }/>
+        <Route path="/*" element={<NotFound/>}/>
         <Route path="/About" element={<About/>}/>
         <Route path="/Merchandise" element={<Merchandise />}/>
         <Route path="/Career" element={<Career/>}/>
@@ -44,8 +72,10 @@ const App = () => {
        </Routes>
       </BrowserRouter>
       
-      <Footer />
-    </div>
+      <Footer /></div>
+            )}
+    
+   </>
   );
 };
 
