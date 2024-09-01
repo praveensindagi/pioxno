@@ -43,7 +43,7 @@ const App = () => {
           // Simulate loading time and then hide the preloader
           const timer = setTimeout(() => {
               setLoading(false);
-              localStorage.setItem('hasVisited', 'true'); // Set the flag in localStorage
+             // localStorage.setItem('hasVisited', 'true'); // Set the flag in localStorage
           }, 1200); // Duration matches the animation
 
           return () => clearTimeout(timer);

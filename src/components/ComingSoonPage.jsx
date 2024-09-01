@@ -2,6 +2,9 @@ import React from 'react';
 import { Box, Typography, Grid, Container } from '@mui/material';
 import { styled } from '@mui/system';
 import IOS from './ios.png';
+import IOSLogin from './login.png';
+import IOSSignup from './signup.png';
+
 import Android from './Android.svg';
 
 const PageContainer = styled(Box)({
@@ -57,6 +60,7 @@ const PhoneContainer = styled(Box)({
 const PhoneGraphic = styled('img')({
   width: '160px', // Adjust size for your design
   height: '320px',
+  
   objectFit: 'contain',
 });
 
@@ -93,24 +97,21 @@ const ComingSoonPage = () => {
       </MarketingLine>
       <Container maxWidth="sm"> 
       <AppGrid container spacing={4}>
-        {/* Android Phone */}
-     {
-      /* 
-       <Grid item xs={6} md={6}>
+        <Grid item xs={6} md={4}>
           <PhoneContainer>
-            <PhoneGraphic src={Android} alt="Android Simulator" />
+            <PhoneGraphic src={IOSLogin} alt="iOS Simulator" />
           </PhoneContainer>
+          
         </Grid>
-      */
-     } 
-
-        {/* Pioxno Text */}
-       
-
-        {/* iOS Phone */}
-        <Grid item xs={6} md={12}>
+        <Grid item xs={6} md={4} mt={10}>
           <PhoneContainer>
             <PhoneGraphic src={IOS} alt="iOS Simulator" />
+          </PhoneContainer>
+          
+        </Grid>
+        <Grid item xs={6} md={4}>
+          <PhoneContainer>
+            <PhoneGraphic src={IOSSignup} alt="iOS Simulator" />
           </PhoneContainer>
           
         </Grid>

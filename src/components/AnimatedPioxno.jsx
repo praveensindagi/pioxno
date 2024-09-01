@@ -29,7 +29,7 @@ const AnimatedPioxno = () => {
                 animation: `${popInOut} 2s ease-in-out`,
             }}
         >
-            <Typography
+                 <Typography
                 variant="h1"
                 sx={{
                     fontFamily: 'Arial, sans-serif',
@@ -37,7 +37,14 @@ const AnimatedPioxno = () => {
                     textTransform: 'uppercase',
                     letterSpacing: '0.1em',
                     color: '#333',
-                    animation: `${popInOut} 2s ease-in-out`,
+                    animation: `${popInOut} 1s ease-in-out`,
+                    fontSize: '10vw', // Responsive font size
+                    '@media (min-width:600px)': {
+                        fontSize: '8vw', // Tablet size
+                    },
+                    '@media (min-width:960px)': {
+                        fontSize: '5vw', // Desktop size
+                    },
                 }}
             >
                 Pioxno
