@@ -10,15 +10,14 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 // Styled components
 const HiringBanner = styled(Box)({
-background:'linear-gradient(to right,  #000000 0%, #000000 100%)',
-  color: '#FAF3E0',
+background:'linear-gradient(to right,  #f5f5f5 0%, #f5f5f5 100%)',
+  color: '#000000',
   padding: '60px 20px',
   textAlign: 'center',
-
-
   position: 'relative',
   overflow: 'hidden',
   zIndex: 1,
+  marginTop:'20px'
 });
 
 const StepContainer = styled(Grid)({
@@ -46,6 +45,7 @@ const StepIcon = styled(Box)({
 
 const StepText = styled(Typography)({
   fontSize: '1.5rem',
+  marginBottom: '10px',
   '@media (max-width:600px)': {
     fontSize: '1.5rem',
   },
@@ -69,10 +69,10 @@ const DotsBackground = styled(Box)({
   left: 0,
   right: 0,
   bottom: 0,
-  backgroundImage: 'radial-gradient(#FAF3E0 2px, transparent 2px)',
+  backgroundImage: 'radial-gradient(#333 2px, transparent 2px)',
   backgroundSize: '20px 20px',
   zIndex: 0,
-  opacity:'15%',
+  opacity:'8%',
 });
 
 const HiringStepsBanner = () => {
@@ -91,6 +91,8 @@ const HiringStepsBanner = () => {
               <AssignmentIcon />
             </StepIcon>
             <StepText> Apply Online</StepText>
+            
+          
           </StepContainer>
 
           {/* Arrow 1 */}

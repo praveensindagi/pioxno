@@ -18,6 +18,7 @@ import JobApplicationPage from "./components/JobApplicationPage.jsx";
 import BlogPage from "./components/BlogPage.jsx";
 import NotFound from "./components/NotFound.jsx";
 import AnimatedPioxno from "./components/AnimatedPioxno.jsx";
+import ProductDescription from "./components/ProductDescription.jsx";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -43,7 +44,7 @@ const App = () => {
           // Simulate loading time and then hide the preloader
           const timer = setTimeout(() => {
               setLoading(false);
-             // localStorage.setItem('hasVisited', 'true'); // Set the flag in localStorage
+              localStorage.setItem('hasVisited', 'true'); // Set the flag in localStorage
           }, 1200); // Duration matches the animation
 
           return () => clearTimeout(timer);
@@ -61,6 +62,9 @@ const App = () => {
        <Routes>
         <Route path="/" element={<Header  /> }/>
         <Route path="/*" element={<NotFound/>}/>
+        
+        <Route path="/ProductDescription" element={<ProductDescription/>}/>
+
         <Route path="/About" element={<About/>}/>
         <Route path="/Merchandise" element={<Merchandise />}/>
         <Route path="/Career" element={<Career/>}/>

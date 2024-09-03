@@ -26,7 +26,7 @@ const AnimatedPioxno = () => {
                 justifyContent: 'center',
                 height: '100vh',
                 backgroundColor: '#fff',
-                animation: `${popInOut} 2s ease-in-out`,
+                animation: `${popInOut} 5s ease-in-out`,
             }}
         >
                  <Typography

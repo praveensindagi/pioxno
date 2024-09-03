@@ -1,43 +1,29 @@
 import React, { useState } from 'react';
 import {
   Container, Grid, Card, CardMedia, CardContent, Typography, Button, IconButton, Box,
-  Select, MenuItem, FormControl, InputLabel, Drawer, List, ListItem, ListItemText, Divider
+  Select,Link, MenuItem, FormControl, InputLabel, Drawer, List, ListItem, ListItemText, Divider
 } from '@mui/material';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import SortIcon from '@mui/icons-material/Sort';
 import FilterListIcon from '@mui/icons-material/FilterList';
-import Product from './product.png';
+import tshirtm from './product/Ptshirt.jpeg';
+
+import tshirtw from './product/pdryfitw.jpeg';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import ProductDescription from './ProductDescription';
+import PaymentBanner from './PaymentBanner';
 
 const products = [
-  {
-    id: 1,
-    name: 'Pioxno Basic',
-    image: Product,
-    description: 'Pioxno basic round neck t-shirt',
-    price: 'Cooming Soon',
-  },
+
   {
     id: 2,
     name: 'Pioxno T-shirt',
-    image: Product,
-    description: 'Women\'s Running Shoe',
-    price: 'Cooming Soon',
+    image: tshirtm,
+    description: 'Men dry-fit black color ',
+    price: '1995.00',
   },
-  {
-    id: 1,
-    name: 'Pioxno Polo Tshirt',
-    image:Product,
-    description: 'Men\'s Running Shoe',
-    price: 'Cooming Soon',
-  },
-  {
-    id: 2,
-    name: 'Pioxno Coffe cup',
-    image: Product,
-    description: 'Women\'s Running Shoe',
-    price: 'Soon',
-  },
+
   // Add
  
   // Add
@@ -101,10 +87,10 @@ const ProductListing = () => {
 
   return (
     <Container  sx={{  height: 'auto', paddingTop: 4 , marginBottom:'20px'}}>
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4, backgroundColor:'#fcfcfc',padding:'20px' }}>
-        <FormControl sx={{ minWidth: 250 }}>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4, backgroundColor:'#f5f5f5',padding:'20px' }}>
+        <FormControl sx={{ minWidth: 250 ,}}>
           <InputLabel id="sort-by-label">
-            <SortIcon sx={{ verticalAlign: 'middle', mr: 1 }} /> Sort By
+            <SortIcon sx={{ verticalAlign: 'middle', mr: 1, }} /> Sort By
           </InputLabel>
           <Select
             labelId="sort-by-label"
@@ -122,7 +108,7 @@ const ProductListing = () => {
         </FormControl>
 
         <IconButton
-          color="primary"
+          color="#333"
           onClick={toggleFilterDrawer(true)}
         >
           <FilterListIcon sx={{ fontSize: 30 }} />
@@ -139,12 +125,16 @@ const ProductListing = () => {
       <Grid container spacing={2}>
         {products.map((product) => (
           <Grid item xs={12} sm={6} md={4} lg={4} key={product.id}>
-            <Card sx={{ height: '100%' }}>
+         <a href='ProductDescription' style={{ textDecoration: 'none' }}>
+     
+
+            <Card sx={{ height: '100%' }}  elevation={0}>
               <CardMedia
                 component="img"
-                height="250"
+                height="350"
                 image={product.image}
                 alt={product.name}
+                sx={{backgroundPosition:'cover',backgroundRepeat:'no-repeat'}}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -153,31 +143,33 @@ const ProductListing = () => {
                 <Typography variant="body1" color="text.secondary">
                   {product.description}
                 </Typography>
-                <Grid container sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
-                <Grid item md={9}> 
-                <Typography variant="h5" >
-                  {product.price}
-                </Typography>
+                <Grid container mt={1} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
+                <Grid item md={10} sm={12}> 
+                <Box display="flex" alignItems="center" >
+      <Typography variant="h6" sx={{fontWeight:'bold'}}>MRP:</Typography>
+      <Box display="flex" alignItems="center" ml={1}>
+        <CurrencyRupeeIcon fontSize="small" sx={{fontWeight:'bold'}} />
+        <Typography variant="h6" sx={{fontWeight:'bold'}}>{product.price}</Typography>
+      </Box>
+      
+    </Box>
+    
+             
                 </Grid>
-                <Grid item md={2} lg={1}> 
-                <IconButton>
-                  <AddShoppingCartIcon fontSize='large' sx={{color:'black'}}/>
-                </IconButton>
-</Grid>
-<Grid item md={1} lg={1}> 
-<IconButton >
-                  <FavoriteBorderIcon fontSize='large' sx={{color:'black'}} />
-                </IconButton>
-</Grid>
+               
+
 
               </Grid>
               </CardContent>
              
             </Card>
+            </a>
           </Grid>
         ))}
       </Grid>
+      <PaymentBanner/>
     </Container>
+    
   );
 };
 

@@ -12,7 +12,7 @@ import {
   } from 'react-share';
 
 const BlogCard = ({ title, description }) => {
-    const shareUrl = 'https://www.pioxno.com/blog/launch';
+    const shareUrl = 'https://www.pioxno.com/BlogPage/';
   return (
     <>
     
