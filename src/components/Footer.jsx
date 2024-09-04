@@ -14,7 +14,7 @@ const Footer =() => {
          <Container  className='FooterContainer'>
             <Grid container rowSpacing={2}>
                 <Grid item  xs={12} md={6}>
-                    <h5> Pioxno LLP.</h5>
+                    <h5> Pioxno.</h5>
                      <h6 id="footerb" >Pioxno specializes in premium Italian, Indian, and high-protein cuisine, catering to diverse customer preferences through efficient delivery on Zomato and Swiggy. Quality and variety are our hallmarks.</h6>
                     
                 </Grid>
