@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
-import About  from "./components/About.jsx";
+import NewAbout  from "./components/NewAbout.jsx";
 
 import { JoinNow } from "./components/JoinNow.jsx";
 import JsonData from "./data/data.json";
@@ -65,7 +65,7 @@ const App = () => {
         
         <Route path="/ProductDescription" element={<ProductDescription/>}/>
 
-        <Route path="/About" element={<About/>}/>
+        <Route path="/NewAbout" element={<NewAbout/>}/>
         <Route path="/Merchandise" element={<Merchandise />}/>
         <Route path="/Career" element={<Career/>}/>
         <Route path="/Brands" element={<Brands/>}/>
