@@ -48,6 +48,13 @@ const ScrollAnimationComponent = ({ children }) => {
 const AboutPioxno = () => {
  
   return (
+
+    <>
+    
+    <Helmet>
+      <title>About Pioxno | Premier Multi-Brand Food Delivery Company</title>
+      <meta name="description" content="Learn more about Pioxno, a leading foodtech startup offering Italian, Indian, and high-protein meals. Discover our mission, vision, and core values." />
+    </Helmet>
     <Box sx={{ fontFamily: 'Georgia, serif' }}>
       {/* About Pioxno Section */}
       <ScrollAnimationComponent>
@@ -317,6 +324,8 @@ const AboutPioxno = () => {
         </Box>
       </ScrollAnimationComponent>
     </Box>
+    </>
+
   );
 };
 

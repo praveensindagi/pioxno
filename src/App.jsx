@@ -52,7 +52,8 @@ const App = () => {
   }, []);
  
   return (
-    <>
+    <>  <HelmetProvider>
+  
        {loading ? (
                 <AnimatedPioxno />
             ) : (
@@ -78,7 +79,8 @@ const App = () => {
       
       <Footer /></div>
             )}
-    
+      </HelmetProvider>
+
    </>
   );
 };

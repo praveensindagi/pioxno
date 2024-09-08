@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Typography, Grid,  Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
+import { Helmet } from 'react-helmet';
 
 import MerchandiseItemsBanner from './MerchandiseItemsBanne';
 import ProductListingPage from './ProductListingPage';
@@ -30,7 +31,11 @@ const Section = styled('div')({
 const MerchandiseHome = () => {
     return (
         <>
-       
+          <Helmet>
+      <title>Pioxno Merchandise | Stylish Apparel & Accessories</title>
+      <meta name="description" content="Explore Pioxno's exclusive merchandise, including stylish apparel and accessories. Shop our collection of high-quality products and show your support for Pioxno." />
+      <meta name="keywords" content="Pioxno merchandise, apparel, accessories, stylish clothing, shop Pioxno, exclusive products" />
+    </Helmet>
             {/* Banner Section */}
            <MerchandiseShop />
           

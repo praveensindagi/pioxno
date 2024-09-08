@@ -3,6 +3,8 @@ import emailjs from "emailjs-com";
 import { Button, Checkbox, FormControlLabel,  useMediaQuery, useTheme ,Grid, TextField, Typography, Link , Container, Box, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle} from "@mui/material";
 import LoyaltyIcon from '@mui/icons-material/Loyalty';
 import { Star } from '@mui/icons-material';
+import { Helmet } from 'react-helmet';
+
 import StarPurple500Icon from '@mui/icons-material/StarPurple500';
 const initialState = {
   firstName: "",
@@ -71,7 +73,11 @@ export const JoinNow= (props) => {
 
   return (
     <>
-   
+    <Helmet>
+      <title>Join the Pioxno Rewards Program | Earn Points & Exclusive Perks</title>
+      <meta name="description" content="Sign up for the Pioxno Rewards Program and earn points on every purchase. Enjoy exclusive perks and discounts on our delicious Italian, Indian, and high-protein meals." />
+      <meta name="keywords" content="Pioxno rewards program, earn points, exclusive perks, food discounts, loyalty program" />
+    </Helmet>
    <Container sx={{marginTop:'100px', padding:'20px'}}>
 
 

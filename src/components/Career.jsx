@@ -4,6 +4,7 @@ import JobCard from './JobCard';
 import JobFilter from './JobFilter.jsx';
 import CultureSection from './CultureSection.jsx';
 import HiringStepsBanner from'./HiringStepsBanner.jsx';
+import { Helmet } from 'react-helmet';
 
 const initialJobs = [
     { title: 'Software Developer Intern', role: 'Development', location: 'Bengaluru(Remote)', experience: '0 years', level: 'fresher', jobType: 'Internship' },
@@ -33,6 +34,11 @@ const Career = () => {
     return (
   
         <>
+         <Helmet>
+      <title>Career Opportunities at Pioxno | Join Our Foodtech Team</title>
+      <meta name="description" content="Explore career opportunities at Pioxno. Join our innovative foodtech team and contribute to the future of food delivery. Check out current job openings and apply today." />
+      <meta name="keywords" content="Pioxno careers, job openings, foodtech jobs, career opportunities, join our team" />
+    </Helmet>
         <div className="careerPage">
         <div className="careerBanner">
                 <div className="bannerHead">
