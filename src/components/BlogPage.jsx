@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Typography, TextField, Grid, Card, CardContent } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import BlogCard from './BlogCard'; // You can create a separate BlogCard component to display individual blogs
+import { Helmet } from 'react-helmet';
 
 const blogPosts = [
   {
@@ -34,6 +35,13 @@ const BlogPage = () => {
   );
 
   return (
+    <>
+     <Helmet>
+      <title>Pioxno Blog | Insights on Food, Lifestyle, and Innovation</title>
+      <meta name="description" content="Dive into the Pioxno Blog for the latest insights on food trends, lifestyle tips, and innovations in the foodtech industry. Stay informed and inspired with our expert articles." />
+      <meta name="keywords" content="Pioxno blog, food trends, lifestyle tips, foodtech innovations, expert articles, food industry insights" />
+    </Helmet>
+  
     <div>
       {/* Banner Section */}
       <div style={{ background: 'linear-gradient(to right, #ffffff, #fcfcfc)', padding: '50px 0' ,marginTop:'120px'}}>
@@ -72,6 +80,7 @@ const BlogPage = () => {
         </Grid>
       </Container>
     </div>
+    </>
   );
 };
 
