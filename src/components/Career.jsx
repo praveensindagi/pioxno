@@ -5,6 +5,7 @@ import JobFilter from './JobFilter.jsx';
 import CultureSection from './CultureSection.jsx';
 import HiringStepsBanner from'./HiringStepsBanner.jsx';
 import { Helmet } from 'react-helmet';
+import FullPageTypography from './FullPageTypography.jsx';
 
 const initialJobs = [
     { title: 'Software Developer Intern', role: 'Development', location: 'Bengaluru(Remote)', experience: '0 years', level: 'fresher', jobType: 'Internship' },
@@ -71,6 +72,7 @@ const Career = () => {
 
             
         </div>
+        <FullPageTypography/>
         <HiringStepsBanner/>
         </>
     

@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import NewAbout  from "./components/NewAbout.jsx";
-
+import { HelmetProvider } from 'react-helmet-async';
+import TermsAndConditions from './components/TermsAndConditions.js';
 import { JoinNow } from "./components/JoinNow.jsx";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import "./components/pioxno.css";
+import CookiesPolicy from './components/CookiesPolicy.js';
 
 import { BrowserRouter,Route,Routes} from "react-router-dom";
 import Brands  from './components/Brands.jsx';
@@ -64,7 +66,9 @@ const App = () => {
         <Route path="/" element={<Header  /> }/>
         <Route path="/*" element={<NotFound/>}/>
         
+        <Route path="/TermsAndConditions.js" element={<TermsAndConditions/>}/>
         <Route path="/ProductDescription" element={<ProductDescription/>}/>
+        <Route path="/CookiesPolicy" element={<CookiesPolicy/>}/>
 
         <Route path="/NewAbout" element={<NewAbout/>}/>
         <Route path="/Merchandise" element={<Merchandise />}/>

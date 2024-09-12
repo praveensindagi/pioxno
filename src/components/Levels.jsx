@@ -49,7 +49,7 @@ export default function Levels() {
       
 <h4  className='Gold'><i class="fa fa-check-circle-o" aria-hidden="true"></i>  All Green Tier Benefits</h4>
       
-<h4  className='Gold'><i class="fa fa-check-circle-o" aria-hidden="true"></i> Enhanced Points Earn Rate: Earn 2 points for every $1 spent.</h4>
+<h4  className='Gold'><i class="fa fa-check-circle-o" aria-hidden="true"></i> Enhanced Points Earn Rate: Earn 10 points for every 100 spent.</h4>
 <h4  className='Gold'><i class="fa fa-check-circle-o" aria-hidden="true"></i> 15% Cashback on every purchase.</h4>
 <h4  className='Gold'><i class="fa fa-check-circle-o" aria-hidden="true"></i> Personalized menu recommendations and priority customer support.</h4>
 <h4  className='Gold'><i class="fa fa-check-circle-o" aria-hidden="true"></i> Birthday Reward: Complimentary meal </h4>

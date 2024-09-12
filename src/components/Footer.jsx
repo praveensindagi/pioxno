@@ -1,9 +1,10 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import { Button } from '@mui/material';
+import { Button ,Link} from '@mui/material';
 import Container from '@mui/material/Container';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
+import TermsAndConditions from './TermsAndConditions';
 const Footer =() => {
     return (
         
@@ -57,11 +58,11 @@ const Footer =() => {
                    
                 </Grid>
                 <Grid item   xs={4} md>
-                    <h6> Terms & Conditions</h6>
+                    <h6><Link href="/TermsAndConditions.js"> Terms & Conditions </Link> </h6>
                    
                 </Grid>
                 <Grid item  xs={4} md>
-                    <h6> Cookies</h6>
+                    <h6 ><Link  href="/CookiesPolicy" >  Cookies </Link> </h6>
                   
                 </Grid>
             </Grid>

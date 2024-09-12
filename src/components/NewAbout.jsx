@@ -2,6 +2,8 @@ import React from 'react';
 import { Box, Typography, Container } from '@mui/material';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
+
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import VerifiedIcon from '@mui/icons-material/Verified';

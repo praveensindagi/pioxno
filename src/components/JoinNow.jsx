@@ -4,6 +4,7 @@ import { Button, Checkbox, FormControlLabel,  useMediaQuery, useTheme ,Grid, Tex
 import LoyaltyIcon from '@mui/icons-material/Loyalty';
 import { Star } from '@mui/icons-material';
 import { Helmet } from 'react-helmet';
+import TermsAndConditions from './TermsAndConditions';
 
 import StarPurple500Icon from '@mui/icons-material/StarPurple500';
 const initialState = {
@@ -181,7 +182,7 @@ export const JoinNow= (props) => {
                       label={
                         <Typography>
                           I agree to the{" "}
-                          <Link href="your-terms-and-conditions-url" target="_blank" rel="noopener noreferrer">
+                          <Link href="/TermsAndConditions.js"  >
                             Terms and Conditions
                           </Link>
                         </Typography>

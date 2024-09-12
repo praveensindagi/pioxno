@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Container, Typography, Button, TextField, Box, Grid, Paper, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import { Container, Typography, Button, TextField, Box, Grid, Paper, Dialog, DialogTitle, DialogActions } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CategoryIcon from '@mui/icons-material/Category';
 import ExperienceIcon from '@mui/icons-material/AccessTime';
@@ -15,7 +14,6 @@ const Banner = styled(Paper)({
     color:'#000000',
     textAlign: 'center',
 });
-
 
 const JobApplicationPage = () => {
     const jobDetails = {
@@ -35,48 +33,65 @@ const JobApplicationPage = () => {
             'Write clean and efficient code',
         ],
         qualifications: [
-            
             'Bachelor’s degree in Computer Science or related field',
             'Proficiency in JavaScript, React, and Node.js',
             'Basic understanding of the MERN stack (MongoDB, Express.js, React.js, Node.js).',
             'Knowledge of JavaScript, HTML, CSS, and related web technologies.',
-            ' Knowledge of JavaScript, HTML, CSS, and related web technologies.',
-            'Familiarity with version control systems (e.g., Git). ',
-            ' Strong problem-solving skills and attention to detail.',
-            'Ability to work both independently and collaboratively in a team environment. ',
-            ' Excellent communication skills and a willingness to learn.',
+            'Familiarity with version control systems (e.g., Git).',
+            'Strong problem-solving skills and attention to detail.',
+            'Ability to work both independently and collaboratively in a team environment.',
+            'Excellent communication skills and a willingness to learn.',
         ],
         perks: [
             'Competitive salary',
             'Health insurance',
             'Flexible working hours',
         ],
-        applyInstructions: 'To apply, please fill out the form below and submit your resume and cover letter.',
+        applyInstructions: 'To apply for a position at Pioxno, please email your resume and cover letter to info@pioxno.com. Use the subject line: Application for [Position Name] – [Your Full Name]. Be sure to mention the position youre applying for, introduce yourself briefly, and highlight your relevant experience and skills. Once we receive your application, our team will review it, and if selected, we’ll reach out to you for the next steps in the hiring process. This keeps everything concise in one paragraph.',
     };
+
     const [open, setOpen] = useState(false);
     const [form, setForm] = useState({
         firstName: '',
         lastName: '',
         email: '',
         phone: '',
-        resume: '',
+        resume: null, // Handle file upload
         coverLetter: '',
     });
 
     const handleChange = (e) => {
-        setForm({
-            ...form,
-            [e.target.name]: e.target.value,
-        });
+        const { name, value, files } = e.target;
+
+        if (name === 'resume') {
+            // Handle file input separately
+            setForm({
+                ...form,
+                resume: files[0], // Store the file object
+            });
+        } else {
+            setForm({
+                ...form,
+                [name]: value,
+            });
+        }
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.send(
+        const formData = new FormData();
+        formData.append('firstName', form.firstName);
+        formData.append('lastName', form.lastName);
+        formData.append('email', form.email);
+        formData.append('phone', form.phone);
+        formData.append('resume', form.resume); // Attach the resume file
+        formData.append('coverLetter', form.coverLetter);
+
+        emailjs.sendForm(
             'service_z4kzmxq', // Replace with your EmailJS service ID
             'template_or1basc', // Replace with your EmailJS template ID
-            form,
+            formData,           // Send the form data with the file
             'Q-WUw-VvLz0CeTkpm' // Replace with your EmailJS user ID
         )
         .then((result) => {
@@ -92,7 +107,7 @@ const JobApplicationPage = () => {
             lastName: '',
             email: '',
             phone: '',
-            resume: '',
+            resume: null, // Reset resume to null
             coverLetter: '',
         });
     };
@@ -118,14 +133,16 @@ const JobApplicationPage = () => {
                     </Typography>
                 </Box>
             </Banner>
+
             <Container maxWidth="md">
                 {/* Position Overview Section */}
                 <Typography variant="h5" sx={{ marginTop: 2 }}>About Pioxno</Typography>
-                <Typography variant="body1" sx={{ marginTop: 1 ,fontSize:'12px'}}>
-                Pioxno is a fast-growing foodtech startup with multibrand outlets, customer-focused and rewarding loyal customers with crazy perks. We are passionate about work culture, supporting and implementing high standards of working culture, and ensuring quality time with employees.
+                <Typography variant="body1" sx={{ marginTop: 1, fontSize:'12px' }}>
+                    Pioxno is a fast-growing foodtech startup with multibrand outlets, customer-focused and rewarding loyal customers with crazy perks. We are passionate about work culture, supporting and implementing high standards of working culture, and ensuring quality time with employees.
                 </Typography>
+
                 <Typography variant="h5" sx={{ marginTop: 2 }}>Position Overview</Typography>
-                <Typography variant="body1" sx={{ marginTop: 1,fontSize:'12px' }}>
+                <Typography variant="body1" sx={{ marginTop: 1, fontSize:'12px' }}>
                     {jobDetails.overview}
                 </Typography>
 
@@ -134,7 +151,7 @@ const JobApplicationPage = () => {
                 <ul>
                     {jobDetails.responsibilities.map((resp, index) => (
                         <li key={index}>
-                            <Typography variant="body1"sx={{ marginTop: 1,fontSize:'12px' }} >{resp}</Typography>
+                            <Typography variant="body1" sx={{ marginTop: 1, fontSize:'12px' }}>{resp}</Typography>
                         </li>
                     ))}
                 </ul>
@@ -143,8 +160,8 @@ const JobApplicationPage = () => {
                 <Typography variant="h5" sx={{ marginTop: 2 }}>Qualifications</Typography>
                 <ul>
                     {jobDetails.qualifications.map((qual, index) => (
-                        <li  key={index}>
-                            <Typography variant="body1" sx={{ marginTop: 1,fontSize:'12px' }}>{qual}</Typography>
+                        <li key={index}>
+                            <Typography variant="body1" sx={{ marginTop: 1, fontSize:'12px' }}>{qual}</Typography>
                         </li>
                     ))}
                 </ul>
@@ -154,16 +171,16 @@ const JobApplicationPage = () => {
                 <ul>
                     {jobDetails.perks.map((perk, index) => (
                         <li key={index}>
-                            <Typography variant="body1" sx={{ marginTop: 1,fontSize:'12px' }}>{perk}</Typography>
+                            <Typography variant="body1" sx={{ marginTop: 1, fontSize:'12px' }}>{perk}</Typography>
                         </li>
                     ))}
                 </ul>
 
                 {/* How to Apply Section */}
                 <Typography variant="h5" sx={{ marginTop: 4 }}>How to Apply</Typography>
-                <Typography variant="body1">{jobDetails.applyInstructions}</Typography>
+                <Typography variant="body1" sx={{ marginTop: 2, fontSize:'12px' }}>{jobDetails.applyInstructions}</Typography>
 
-                {/* Application Form Section */}
+                {/* Application Form Section 
                 <Box sx={{ marginTop: 4 }}>
                     <Typography variant="h4">Apply for this job</Typography>
                     <form noValidate autoComplete="off" onSubmit={handleSubmit}>
@@ -232,8 +249,8 @@ const JobApplicationPage = () => {
                                     InputLabelProps={{
                                         shrink: true,
                                     }}
-                                    value={form.resume}
-                                    onChange={handleChange}
+                                    inputProps={{ accept: '.pdf,.doc,.docx' }} // Accept PDF, DOC, and DOCX files
+                                    onChange={handleChange} // Handle file upload
                                 />
                             </Grid>
                             <Grid item xs={12}>
@@ -250,25 +267,24 @@ const JobApplicationPage = () => {
                                 />
                             </Grid>
                             <Grid item xs={12}>
-                                <Button id='jobapplybuttonfinal' size="large" color="primary" variant="outlined" fullWidth type="submit">Submit Application</Button>
+                                <Button type="submit"  variant="contained" color="primary" fullWidth>
+                                    Submit Application
+                                </Button>
                             </Grid>
                         </Grid>
                     </form>
-                </Box>
+                </Box>*/}
             </Container>
 
-            {/* Dialog for submission confirmation */}
-            <Dialog id="DialogApplication"open={open} onClose={handleClose}>
-          
-
-                <DialogTitle>🎉 Congratulations!</DialogTitle>
-                
-                    <Typography variant="h6">Your application has been submitted successfully.</Typography>
-              
+            {/* Success Dialog 
+            <Dialog open={open} onClose={handleClose}>
+                <DialogTitle>Application Submitted</DialogTitle>
                 <DialogActions>
-                    <Button onClick={handleClose} color="primary">Close</Button>
+                    <Button onClick={handleClose} color="primary" autoFocus>
+                        Close
+                    </Button>
                 </DialogActions>
-            </Dialog>
+            </Dialog> */}
         </div>
     );
 };

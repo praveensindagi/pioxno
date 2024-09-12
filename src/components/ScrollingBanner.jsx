@@ -10,8 +10,8 @@ const ScrollingBanner = () => {
       sx={{
         overflow: 'hidden',
         whiteSpace: 'nowrap',
-        bgcolor: '#c1121f',
-        height: '30px',
+        bgcolor: '#000',
+        height: '40px',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -20,16 +20,16 @@ const ScrollingBanner = () => {
       <Box
         sx={{
           display: 'inline-block',
-          animation: 'scroll-left 10s linear infinite',
+          animation: 'scroll-left 12s linear infinite',
           color: '#fcfcfc',
           fontSize: '16px',
           px: 2,
         }}
       >
-        <Typography component="span" sx={{ display: 'flex', alignItems: 'center',fontSize:'12px' ,fontWeight:'bold'}}>
+        <Typography component="span" sx={{ display: 'flex', alignItems: 'center',fontSize:'14px' ,fontWeight:'bold'}}>
           <StarsIcon fontSize="large" sx={{ mr: 1 }} />
-          20% OFF UPTO <CurrencyRupeeIcon fontSize="small" sx={{ mx: 1 }} /> 50. USE CODE - HUNGRY50
-          <StarsIcon fontSize="large" sx={{ ml: 1 }} />
+          Unlock 100 Bonus Points Instantly! Join today and get early access to rewards!  
+              <StarsIcon fontSize="large"  sx={{ ml: 1,}} />
         </Typography>
         
       </Box>

@@ -4,6 +4,13 @@ import StarsIcon from '@mui/icons-material/Stars';
 import ScrollingBanner from "./ScrollingBanner";
 
 export const Navigation = (props) => {
+  const style = {
+  
+    fontFamily: 'Italiana, sans-serif',
+        fontStyle: 'normal',
+    textDecoration: 'none',
+        fontSize: '26px'
+  };
   return (
     <>
       <nav className="navbar-fixed-top">
@@ -22,8 +29,8 @@ export const Navigation = (props) => {
                 <div className="bar bar2"></div>
                 <div className="bar bar3"></div>
               </button>
-              <a className="navbar-brand page-scroll" href="/">
-                Pioxno
+              <a className="page-scroll" style={style} href="/">
+               <strong>Pioxno </strong> 
               </a>
             </div>
 
